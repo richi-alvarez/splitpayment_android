@@ -50,7 +50,7 @@ public class EpaycoNetworkUtils {
 
         clientParams.put("franchise", client.getFranchise());
         clientParams.put("mask", client.getMask());
-        clientParams.put("getCustomer_id", client.getCustomer_id());
+        clientParams.put("customer_id", client.getCustomer_id());
        
 
         return clientParams;
