@@ -207,6 +207,20 @@ public class Epayco {
         }
     }
 
+    /**
+     * delete customer token
+     * @param client
+     * @param callback
+     */
+    public void createCustomer(@NonNull Client client, @NonNull EpaycoCallback callback) {
+        String Base = base(false);
+        try {
+            post(Base + "/v1/remove/token", hashMapFromCLient(client), apiKey, callback);
+        } catch (Exception e) {
+            callback.onError(e);
+        }
+
+    }
 
 
     /***************************
