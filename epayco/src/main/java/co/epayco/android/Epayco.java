@@ -29,6 +29,7 @@ import static co.epayco.android.util.EpaycoNetworkUtils.hashMapFromSub;
 import static co.epayco.android.util.EpaycoNetworkUtils.hashMapFromSubCharge;
 import static co.epayco.android.util.EpaycoNetworkUtils.hashMapFromPse;
 import static co.epayco.android.util.EpaycoNetworkUtils.hashMapFromCharge;
+import static co.epayco.android.util.EpaycoNetworkUtils.hashMapFromCLientDelete;
 
 public class Epayco {
 
