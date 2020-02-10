@@ -215,7 +215,7 @@ public class Epayco {
     public void deleteTokenCustomer(@NonNull Client client, @NonNull EpaycoCallback callback) {
         String Base = base(false);
         try {
-            post(Base + "/v1/remove/token", hashMapFromCLient(client), apiKey, callback);
+            post(Base + "/v1/remove/token", hashMapFromCLientDelete(client), apiKey, callback);
         } catch (Exception e) {
             callback.onError(e);
         }
